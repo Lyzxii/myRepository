@@ -22,5 +22,17 @@ public class UserController {
 		
 		return ResponseEntity.ok(user);
 	}
+	
+	@RequestMapping("/user2")
+	public ResponseEntity<User> exex(){
+		
+		User user = new User();
+		user.setAge(12);
+		user.setBirthday(new Date());
+		user.setName("lisa");
+		user.setPassword("1224111");
+		
+		return ResponseEntity.ok(user);
+	}
 
 }
